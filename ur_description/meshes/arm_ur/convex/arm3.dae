@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>NxuStream2 converter - http://www.ageia.com</author>
+			<authoring_tool>PhysX Rocket, PhysX Viewer, or CreateDynamics</authoring_tool>
+			<comments>questions to: jratcliff@ageia.com</comments>
+			<copyright></copyright>
+			<source_data>chair_gothic_tilted</source_data>
+		</contributor>
+		<unit meter="1" name="meter"/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+   <library_materials>
+      <material id="Material" name="Material">
+         <instance_effect url="#Material-fx"></instance_effect>
+      </material>
+   </library_materials>
+   <library_effects>
+      <effect id="Material-fx" name="Material">
+         <profile_COMMON>
+            <technique id="Material-fx-COMMON" sid="COMMON">
+               <phong>
+                  <ambient>
+                     <color>0.803922 0.588235 0.92549 1</color>
+                  </ambient>
+                  <diffuse>
+                     <color>0.803922 0.588235 0.92549 1</color>
+                  </diffuse>
+                  <specular>
+                     <color>0.631373 0.631373 0.631373 1</color>
+                  </specular>
+                  <shininess>
+                     <float>1</float>
+                  </shininess>
+                  <reflective>
+                     <color>0 0 0 1</color>
+                  </reflective>
+                  <transparent>
+                     <color>1 1 1 1</color>
+                  </transparent>
+                  <transparency>
+                     <float>0</float>
+                  </transparency>
+               </phong>
+           </technique>
+         </profile_COMMON>
+      </effect>
+   </library_effects>
+  <library_geometries>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Position-array">
+            0.049509719 -0.024639526 0.003529001  0.000018926 -0.024639526 -0.050867461  0.034347177 -0.024639526 -0.03621646  -0.003465869 0.022520948 -0.000192005  
+            0.031778 -0.004562 -0.013754  -0.001378426 0.007901629 -0.030973503  0.024573414 0.004375447 0.001777475  0.046381678 -0.024639526 -0.017658317  
+            0.015554 -0.014686 -0.042045999  0.019814203 -0.024639526 -0.04611697  0.005901 0.014098 -0.015667999  -0.002415932 0.018400837 -0.016202642  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 2 5  6 3 0  
+             6 0 4  7 0 2  7 2 4  7 4 0  
+             8 1 5  8 5 2  9 2 1  9 1 8  
+             9 8 2  10 3 6  10 6 4  10 4 5  
+             11 3 10  11 10 5  11 1 3  11 5 1  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Position-array">
+            0.049468979 -0.024570124 0.00352614  -0.007269027 -0.024570124 0.052890386  -0.003465869 0.022520948 -0.000192005  -0.002952256 -0.024570124 0.052883476  
+            0.03307033 -0.024570124 0.037964478  0.020116 -0.006025 0.033654001  -0.005858056 0.010370028 0.032802541  0.024573414 0.004375447 0.001777475  
+            0.02334 0.004476 0.009918  0.042367999 -0.018745 0.019142  0.04563674 -0.024570124 0.019936709  0.001967 0.015528 0.019633999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 3 0  4 5 3  
+             6 1 3  6 3 5  6 2 1  7 0 2  
+             7 2 8  9 0 7  9 7 8  9 5 4  
+             9 8 5  10 4 0  10 0 9  10 9 4  
+             11 6 5  11 5 8  11 2 6  11 8 2  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Position-array">
+            -0.064826243 0.038109943 -0.004570264  -0.061796036 -0.016841801 -0.034761012  -0.003535378 0.022549279 -0.000265193  -0.062496733 0.008312914 -0.037735276  
+            -0.063452728 0.030137645 -0.024124857  -0.008220429 -0.016841801 -0.047940504  -0.000213938 -0.016841801 -0.047552198  -0.033991002 0.031645 -0.014083  
+            -0.006941 0.013622 -0.02758  -0.001617069 0.010989944 -0.027575973  -0.033877444 0.034242537 -0.00239642  -0.037560001 0.018003 -0.032708999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Vertex"/>
+           <p>
+             0 1 2  3 1 0  3 0 4  3 5 1  
+             6 2 1  6 1 5  7 2 8  7 4 0  
+             9 8 2  9 2 6  9 6 8  10 0 2  
+             10 2 7  10 7 0  11 4 7  11 7 8  
+             11 8 6  11 3 4  11 5 3  11 6 5  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Position-array">
+            -0.066036612 0.036233552 0.012661609  -0.06769193 -0.01267688 0.036228232  -0.074000001 0.000005253 -0.000015221  -0.067860276 0 0.038624998  
+            -0.125491038 -0.012313643 0.035190158  -0.125491038 0.035194363 0.012297981  -0.125491038 0.029742001 0.022840001  -0.067268364 0.024081999 0.030198  
+            -0.125491038 0.014337 0.034651  -0.125491038 0.00488 0.037181001  -0.067792289 0.008595 0.037657  -0.066838779 0.030198 0.024081999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 1 3  4 2 1  
+             5 2 4  5 4 6  5 0 2  5 6 0  
+             7 3 0  8 7 6  8 6 4  9 4 3  
+             9 8 4  10 8 9  10 9 3  10 3 7  
+             10 7 8  11 0 6  11 6 7  11 7 0  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Position-array">
+            -0.074000001 -0.000000467 0.000001126  -0.06769193 -0.01267688 0.036228232  -0.064255774 -0.036222912 -0.012692004  -0.125491038 -0.035185993 -0.01232917  
+            -0.125491038 -0.012313643 0.035190158  -0.125491038 -0.034651 0.014337  -0.066324413 -0.0348 0.016759001  -0.125491038 -0.022840001 0.029742001  
+            -0.074000001 -0.0348 0.016759001  -0.074000001 -0.038624998 0  -0.067268364 -0.024081999 0.030198  -0.065147258 -0.038624998 0  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Vertex"/>
+           <p>
+             0 1 2  0 2 3  4 1 0  4 0 3  
+             5 4 3  6 2 1  7 4 5  7 5 8  
+             7 1 4  9 6 8  9 8 5  9 3 2  
+             9 5 3  10 6 1  10 1 7  10 8 6  
+             10 7 8  11 2 6  11 6 9  11 9 2  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Position-array">
+            -0.125491038 0.035194363 0.012297981  -0.074000001 0.000006177 -0.000014897  -0.066036612 0.036233552 0.012661609  -0.125491038 0.012313643 -0.035190158  
+            -0.074000001 0.012676977 -0.036228508  -0.125491038 0.034651 -0.014337  -0.062600553 0.012687009 -0.036257178  -0.063008666 0.023703866 -0.030446941  
+            -0.064543545 0.037657 -0.008595  -0.074000001 0.0348 -0.016759001  -0.125491038 0.022840001 -0.029742001  -0.125491038 0.037181001 -0.00488  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Vertex"/>
+           <p>
+             0 1 2  3 4 1  3 1 0  5 3 0  
+             6 1 4  6 4 7  6 2 1  6 7 2  
+             8 9 5  8 2 7  8 7 9  10 3 5  
+             10 9 7  10 5 9  10 4 3  10 7 4  
+             11 5 0  11 8 5  11 0 2  11 2 8  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Position-array">
+            -0.125491038 -0.035185993 -0.01232917  -0.064255774 -0.036222912 -0.012692004  -0.074000001 0.000005383 -0.000015175  -0.125491038 0.012313643 -0.035190158  
+            -0.062600553 0.012687009 -0.036257178  -0.074000001 0 -0.038624998  -0.125491038 -0.014337 -0.034651  -0.06268169 -0.016290961 -0.035102025  
+            -0.074000001 -0.030198 -0.024081999  -0.125491038 -0.029742001 -0.022840001  -0.063414894 -0.029749075 -0.024663482  -0.062430829 -0.000032438 -0.038673535  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Vertex"/>
+           <p>
+             0 1 2  3 0 2  4 5 3  4 3 2  
+             4 2 1  6 0 3  6 3 5  7 6 5  
+             7 4 1  8 1 0  9 6 7  9 7 8  
+             9 0 6  9 8 0  10 7 1  10 1 8  
+             10 8 7  11 5 4  11 4 7  11 7 5  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Position-array">
+            -0.003535378 0.022549279 -0.000265193  -0.064000003 -0.0165875 0.034859978  -0.064826243 0.038109943 -0.004570264  -0.008267855 -0.0165875 0.050291799  
+            -0.067860276 0 0.038624998  -0.067268364 0.024081999 0.030198  -0.016713001 0.012623 0.034626  -0.004832804 0.019596362 0.018206133  
+            -0.045614999 0.033814002 0.015588  -0.066324413 0.0348 0.016759001  -0.006213025 0.005086657 0.037856195  -0.033879999 0.034256 -0.002289  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Vertex"/>
+           <p>
+             0 1 2  0 3 1  4 1 3  4 3 5  
+             4 5 2  4 2 1  6 7 8  6 8 5  
+             6 5 3  9 2 5  9 5 8  9 8 2  
+             10 7 6  10 6 3  10 3 0  10 0 7  
+             11 0 2  11 2 8  11 7 0  11 8 7  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Position-array">
+            -0.306187332 0.007475 0.036486767  -0.346929997 0.007475 0.000004363  -0.306187332 0.037179004 0.000004363  -0.368058652 0.007475 0.036633983  
+            -0.368058652 0.0572 0.028473202  -0.368058652 0.0572 0.000004363  -0.306187332 0.029742001 0.022840001  -0.354930222 0.0572 0.000004363  
+            -0.306187332 0.022817001 0.029759999  -0.306187332 0.034639999 0.014364  -0.359099001 0.0572 0.017183  -0.306187332 0.014337 0.034651  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Vertex"/>
+           <p>
+             0 1 2  3 0 4  3 1 0  5 1 3  
+             5 3 4  5 2 1  6 0 2  7 2 5  
+             7 5 4  8 0 6  8 6 4  9 4 6  
+             9 6 2  10 7 4  10 4 9  10 2 7  
+             10 9 2  11 4 0  11 0 8  11 8 4  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Position-array">
+            -0.306187332 0.007475 -0.036488481  -0.346929997 0.007475 0.000004363  -0.368058652 0.007475 -0.036625255  -0.306187332 0.037179004 0.000004363  
+            -0.368042797 0.0572 0.000004363  -0.368058652 0.0572 -0.028473202  -0.306187332 0.029759999 -0.022817001  -0.354930222 0.0572 0.000004363  
+            -0.306187332 0.022840001 -0.029742001  -0.306187332 0.034651 -0.014337  -0.359099001 0.0572 -0.017183  -0.306187332 0.014364 -0.034639999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 2 1  4 1 3  
+             5 0 2  5 2 4  6 3 0  7 4 3  
+             7 5 4  8 5 6  8 6 0  9 3 6  
+             9 6 5  10 7 3  10 3 9  10 5 7  
+             10 9 5  11 0 5  11 5 8  11 8 0  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Position-array">
+            -0.306187332 -0.037179004 -0  -0.368058652 -0.04225 0.028473202  -0.368058652 -0.04225 0  -0.368058652 0.007475 0.036633983  
+            -0.346929997 0.007475 -0  -0.306187332 -0.022840001 0.029742001  -0.306187332 0.00488 0.037181001  -0.306187332 -0.034651 0.014337  
+            -0.306187332 0.007475 0.036486767  -0.306187332 -0.014364 0.034639999  -0.368058652 -0.007382093 0.036740255  -0.306187332 -0.004909 0.037177  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Vertex"/>
+           <p>
+             0 1 2  3 2 1  4 0 2  4 2 3  
+             5 0 6  7 1 0  7 0 5  7 5 1  
+             8 3 6  8 4 3  8 6 0  8 0 4  
+             9 1 5  9 5 6  10 3 1  10 6 3  
+             11 9 6  11 6 10  11 1 9  11 10 1  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Position-array">
+            -0.368058652 -0.04225 0  -0.306187332 -0.037179004 -0  -0.346929997 0.007475 -0  -0.368058652 -0.04225 -0.028473202  
+            -0.368058652 -0.001781584 -0.037429489  -0.306187332 -0.022817001 -0.029759999  -0.306187332 0.004909 -0.037177  -0.368058652 0.007475 -0.036625255  
+            -0.306187332 -0.034639999 -0.014364  -0.306187332 0.007475 -0.036488481  -0.306187332 -0.00488 -0.037181001  -0.306187332 -0.014337 -0.034651  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Vertex"/>
+           <p>
+             0 1 2  3 1 0  3 0 4  5 6 1  
+             7 4 0  7 0 2  7 6 4  8 1 3  
+             8 3 5  8 5 1  9 6 7  9 7 2  
+             9 2 1  9 1 6  10 6 5  10 4 6  
+             10 3 4  11 5 3  11 3 10  11 10 5  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Position-array">
+            0.000148899 -0.029287523 -0.052717876  0.000504422 -0.071800001 -0.057779428  -0.002602 -0.066500001 -0.057941999  -0.003535378 -0.066500001 -0.000265193  
+            -0.057572097 -0.071800001 -0.004060733  -0.064826243 -0.038110118 -0.004570264  -0.062706023 -0.016841801 -0.034755617  -0.040109001 -0.071800001 -0.041758001  
+            -0.000213938 -0.016841801 -0.047552198  -0.003535378 -0.071800001 -0.000265193  -0.024821 -0.071800001 -0.052310001  -0.051268 -0.071800001 -0.026907001  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 3 5  6 4 5  
+             6 0 2  7 1 4  8 0 6  8 6 5  
+             8 3 0  8 5 3  9 1 3  9 3 4  
+             9 4 1  10 6 2  10 7 6  10 2 1  
+             10 1 7  11 4 6  11 6 7  11 7 4  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Position-array">
+            0.002331 -0.071800001 0.057852998  -0.007582605 -0.071800001 0.057354767  -0.003540152 -0.071800001 -0.000197222  -0.002602 -0.054499999 0.057941999  
+            -0.007269027 -0.024570124 0.052890386  0.057734288 -0.071800001 0.004106695  0.056003079 -0.04042301 0.003985095  0.034426 -0.037841 0.043724999  
+            0.043338999 -0.071800001 0.038394999  0.049468979 -0.024570124 0.00352614  0.03307033 -0.024570124 0.037964478  0.050526001 -0.045279 0.026889  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Vertex"/>
+           <p>
+             0 1 2  1 0 3  4 2 1  4 1 3  
+             5 0 2  5 2 6  7 4 3  7 3 0  
+             8 0 5  8 7 0  9 6 2  9 2 4  
+             10 4 7  10 9 4  11 6 9  11 9 10  
+             11 10 7  11 7 8  11 5 6  11 8 5  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Position-array">
+            -0.003540152 -0.071800001 -0.000197222  0.057734288 -0.071800001 0.004106695  0.056003079 -0.04042301 0.003985095  0.002331 -0.071800001 -0.057852998  
+            0.000018926 -0.024639526 -0.050867461  0.049509719 -0.024639526 0.003529001  0.041388437 -0.024639526 -0.027536217  0.043338999 -0.071800001 -0.038394999  
+            0.02139 -0.048073001 -0.053506002  0.043678001 -0.054499999 -0.03816  0.025101209 -0.024639526 -0.043313745  0.055222999 -0.049926002 -0.017101999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Vertex"/>
+           <p>
+             0 1 2  0 3 1  0 4 3  5 6 4  
+             5 4 0  5 0 2  7 1 3  8 9 7  
+             8 7 3  8 3 4  10 6 9  10 9 8  
+             10 4 6  10 8 4  11 1 7  11 7 9  
+             11 6 5  11 5 2  11 9 6  11 2 1  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Position-array">
+            -0.007582605 -0.071800001 0.057354767  -0.003535378 -0.066500001 -0.000265193  -0.007576454 -0.049120042 0.057267204  -0.067595825 -0.0165875 0.034859978  
+            -0.007081476 -0.0165875 0.05022024  -0.064826243 -0.038110118 -0.004570264  -0.057572097 -0.071800001 -0.004060733  -0.046287999 -0.071800001 0.034782998  
+            -0.003535378 -0.071800001 -0.000265193  -0.032891002 -0.071800001 0.047651  -0.054919999 -0.071800001 0.018335  -0.026436303 -0.0165875 0.048192423  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Vertex"/>
+           <p>
+             0 1 2  3 0 2  4 2 1  5 3 4  
+             5 4 1  5 1 6  5 6 3  7 6 0  
+             8 0 6  8 6 1  8 1 0  9 0 3  
+             9 3 7  9 7 0  10 3 6  10 6 7  
+             10 7 3  11 3 2  11 2 4  11 4 3  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Position-array">
+            -0.394214004 -0.04225 0.037457999  -0.429930001 -0.04225 0  -0.394214004 -0.04225 -0.037457999  -0.368058652 0.0572 -0.028473202  
+            -0.419569999 0.0572 -0.025877999  -0.394214004 0.0572 0.037457999  -0.368058652 -0.04225 0.028473202  -0.427244008 0.0572 0.013937  
+            -0.368058652 -0.04225 -0.028473202  -0.368058652 0.0572 0.028473202  -0.419569999 -0.04225 0.025877999  -0.419569999 -0.04225 -0.025877999  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Vertex"/>
+           <p>
+             0 1 2  3 2 4  3 4 5  6 0 2  
+             6 5 0  7 5 4  7 4 1  8 2 3  
+             8 3 6  8 6 2  9 3 5  9 5 6  
+             9 6 3  10 1 0  10 7 1  10 0 5  
+             10 5 7  11 2 1  11 1 4  11 4 2  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+    <geometry id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Mesh" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Mesh">
+      <convex_mesh>
+        <source id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Position">
+          <float_array count="36" id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Position-array">
+            -0.125491038 -0.037181001 0.00488  -0.125491038 0.004909 -0.037177  -0.125491038 0.00488 0.037181001  -0.306187332 -0.022840001 0.029742001  
+            -0.306187332 0.034639999 0.014364  -0.306187332 -0.00488 -0.037181001  -0.125491038 0.037181001 -0.00488  -0.306187332 -0.034639999 -0.014364  
+            -0.306187332 0.029759999 -0.022817001  -0.125491038 -0.022817001 -0.029759999  -0.306187332 0.014337 0.034651  -0.125491038 0.029742001 0.022840001  
+          </float_array>
+          <technique_common>
+            <accessor count="12" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Position-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+    		   </technique_common>
+				 </source>
+   		 <vertices id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Vertex">
+					<input semantic="POSITION" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Position"/>
+				</vertices>
+				<triangles material="Material" count="20">
+					<input offset="0" semantic="VERTEX" source="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Vertex"/>
+           <p>
+             0 1 2  3 0 2  4 5 3  6 2 1  
+             7 0 3  7 3 5  8 5 4  8 4 6  
+             8 1 5  8 6 1  9 1 0  9 0 7  
+             9 5 1  9 7 5  10 3 2  10 4 3  
+             11 4 10  11 10 2  11 2 6  11 6 4  
+           </p>
+				</triangles>
+      </convex_mesh>
+		</geometry>
+  </library_geometries>
+  <library_visual_scenes>
+	  <visual_scene id="Scene0-Visual" name="Scene0-Visual">
+      <node id="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3-Node" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3" type="NODE">
+        <translate>0 0 0</translate>
+        <rotate>1 0 0  0</rotate>
+      </node>
+  	  </visual_scene>
+  </library_visual_scenes>
+  <library_physics_materials>
+    <physics_material id="pmat0_0-PhysicsMaterial" name="pmat0_0-PhysicsMaterial">
+      <technique_common>
+        <dynamic_friction>0.5</dynamic_friction>
+        <restitution>0</restitution>
+        <static_friction>0.5</static_friction>
+      </technique_common>
+    </physics_material>
+  </library_physics_materials>
+  <library_physics_models>
+    <physics_model id="Scene0-PhysicsModel">
+      <rigid_body sid="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3-RigidBody" name="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3">
+        <technique_common>
+          <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_0-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_1-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_2-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_3-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_4-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_5-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_6-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_7-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_8-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_9-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_10-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_11-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_12-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_13-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_14-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_15-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_16-Mesh"/>
+         </shape>
+         <shape>
+            <translate>0 0 0</translate>
+            <rotate>1 0 0  0</rotate>
+            <instance_physics_material url="#pmat0_0-PhysicsMaterial"/>
+            <density>1</density>
+            <extra>
+              <technique profile="PhysX">
+               <skinWidth>0</skinWidth>
+              </technique>
+            </extra>
+            <instance_geometry url="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3_17-Mesh"/>
+         </shape>
+        <dynamic>true</dynamic>
+        <mass>1</mass>
+		   	</technique_common>
+        <extra>
+          <technique profile="PhysX">
+            <extra>
+              <technique profile="PhysX">
+                <linearDamping>0</linearDamping>
+                <angularDamping>0</angularDamping>
+                <solverIterationCount>32</solverIterationCount>
+              </technique>
+            </extra>
+            <disable_collision>false</disable_collision>
+          </technique>
+        </extra>
+  	  </rigid_body>
+    </physics_model>
+  </library_physics_models>
+  <library_physics_scenes>
+    <physics_scene id="Scene0-Physics">
+      <instance_physics_model url="#Scene0-PhysicsModel">
+        <instance_rigid_body target="#/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3-Node" body="/home/nhg/git/care-o-bot/cob_common/cob_description/meshes/arm_ur/convex/arm3-RigidBody"/>
+      <extra>
+        <technique profile="PhysX">
+        </technique>
+      </extra>
+      </instance_physics_model>
+      <technique_common>
+        <gravity>0 -9.800000191 0</gravity>
+      </technique_common>
+    </physics_scene>
+  </library_physics_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene0-Visual"/>
+    <instance_physics_scene url="#Scene0-Physics"/>
+  </scene>
+</COLLADA>
