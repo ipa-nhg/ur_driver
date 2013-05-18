@@ -1,0 +1,13 @@
+<stack>
+  <description brief="ur_driver">
+
+    ur_driver
+
+  </description>
+  <author>Maintained by ipa-nhg</author>
+  <license>BSD,LGPL</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ur_driver</url>
+  
+</stack>
+
